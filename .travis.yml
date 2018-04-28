@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+    - "4"
+install:
+    - npm install -g resume-cli
+    - npm install
+script:
+    - resume export index.html

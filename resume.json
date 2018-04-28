@@ -1,0 +1,139 @@
+{
+  "basics": {
+    "name": "葉家郡",
+    "label": "Software Engineer",
+    "picture": "",
+    "email": "xnumtw@gmail.com",
+    "phone": "0989-742-547",
+    "website": "https://xnum.github.io",
+    "summary": "Experienced, skilled programmer, hands-on experience in UNIX programming and command-line interface environment. Strong problem solving skills. Focus on high availability and fault tolerant distributed system technologies now.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Taipei",
+      "countryCode": "TW",
+      "region": "Taiwan"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "xnumtw",
+        "url": "https://www.linkedin.com/in/xnumtw/"
+      },
+      {
+        "network": "GitHub",
+        "username": "xnum",
+        "url": "https://github.com/xnum"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Taipei Exchange",
+      "position": "Software engineer",
+      "website": "https://www.tpex.org.tw",
+      "startDate": "2017-06-30",
+      "endDate": "",
+      "summary": "core systems development and maintenance. excellent problem solver.",
+      "highlights": [
+        "Provided software security advice and design on new system architecture.",
+        "Introduced RPM Package Manager into system installation procedure, reduced 40% time for building new machine.",
+        "Analyzed receiving multicast packet loss problem, peak loss rate reduced from 50% to 0.2%.",
+        "Developed new message dispatch gateway and conducted secure file transfer method to replace plain design for Web client.",
+        "Researched distributed system and consensus algorithm, proposed next generation online transaction processing system design based on application-level approach.",
+        "Developed networking failure simulation framework for testing.",
+        "Developed system testing framework with FIX protocol.",
+        "Imported and shared doxygen to deal with auto document generation.",
+        "Optimized old continuous data transfer to 110 times faster and solved several race condition bugs,developed a cross platform new one by event-driven design with backward compatible."
+      ]
+    },
+    {
+      "company" : "NCTU Information Technology Service Center",    
+      "position": "Part-time software engineer",
+      "website": "https://www.it.nctu.edu.tw/",
+      "startDate": "2015-09",
+      "endDate": "2017-04",
+      "summary": "full-stack web development",
+      "highlights": [
+        "Migrated 4 mail services and thousands of accounts to Google G Suite service and developed NCTU G Suite mail system using the microservice architecture.",
+        "Developed firewall plugin system integrates WAF with switches."
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "National Chiao Tung University",
+      "area": "Institute of Computer Science and Engineering",
+      "studyType": "Master",
+      "startDate": "2015",
+      "endDate": "2017",
+      "gpa": "3.93",
+      "courses": [
+        "Software Testing",
+        "Operating System",
+        "Parallel Programming",
+        "Advanced UNIX Programming",
+        "Network Security",
+        "Network Programming"
+      ]
+    },
+    {
+      "institution": "national taichung university of education",
+      "area": "Department of computer science",
+      "studyType": "Bachelor",
+      "startDate": "2012",
+      "endDate": "2015",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Taiwan Student Cluster Competition",
+      "date": "2015-05",
+      "awarder": "National Center for High-Performance Computing",
+      "summary": "Led a team to won 3rd prize. Constructed and tuned high performance computing cluster with GPUs and InfiniBand."
+    }
+  ],
+  "publications": [
+    {
+      "name": "MCTS-based Path Exploration for Symbolic Execution",
+      "publisher": "Master's thesis",
+      "releaseDate": "2017-06-01",
+      "summary": "Symbolic execution is a technology that is often used today in program automation testing and analysis. Since symbol execution traces and simulates all possible paths when a program executes, its number grows exponentially. This problem is called the path explosion problem. Therefore, we need to take some strategies within the limited resources to give priority to the more valuable path. In this paper, we propose to use The Monte Carlo search tree-based search strategy solves this problem and compares it with other classic strategies such as depth-first search (DFS) and breadth-first search (BFS)."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Language",
+      "level": "Master",
+      "keywords": [
+        "C/C++",
+        "Bash shell script",
+        "PHP (Laravel)"
+      ]
+    },
+    {
+      "name": "Theory of Computing Systems",
+      "level": "Master",
+      "keywords": [
+        "Distributed system",
+        "Symbolic execution"
+      ]
+    },
+    {
+      "name": "Information Engineering",
+      "level": "Master",
+      "keywords": [
+        "Linux programming",
+        "Network programming",
+        "Parallel programming",
+        "Software security"
+      ]
+    }
+  ],
+  "languages": [],
+  "interests": [],
+  "references": []
+}

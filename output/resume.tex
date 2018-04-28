@@ -1,0 +1,235 @@
+% Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+% Copyright 2014 Mark Szepieniec <http://github.com/mszep>
+% 
+% ConText style for making a resume with pandoc. Inspired by moderncv.
+% 
+% This CSS document is delivered to you under the CC BY-SA 3.0 License.
+% https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+\startmode[*mkii]
+  \enableregime[utf-8]  
+  \setupcolors[state=start]
+\stopmode
+
+\setupcolor[hex]
+\definecolor[titlegrey][h=757575]
+\definecolor[sectioncolor][h=397249]
+\definecolor[rulecolor][h=9cb770]
+
+% Enable hyperlinks
+\setupinteraction[state=start, color=sectioncolor]
+
+\setuppapersize [A4][A4]
+\setuplayout    [width=middle, height=middle,
+                 backspace=20mm, cutspace=0mm,
+                 topspace=10mm, bottomspace=20mm,
+                 header=0mm, footer=0mm]
+
+%\setuppagenumbering[location={footer,center}]
+
+\setupbodyfont[11pt, helvetica]
+
+\setupwhitespace[medium]
+
+\setupblackrules[width=31mm, color=rulecolor]
+
+\setuphead[chapter]      [style=\tfd]
+\setuphead[section]      [style=\tfd\bf, color=titlegrey, align=middle]
+\setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
+                          before={\leavevmode\blackrule\hspace}]
+\setuphead[subsubsection][style=\bf]
+
+\setuphead[chapter, section, subsection, subsubsection][number=no]
+
+%\setupdescriptions[width=10mm]
+
+\definedescription
+  [description]
+  [headstyle=bold, style=normal,
+   location=hanging, width=18mm, distance=14mm, margin=0cm]
+
+\setupitemize[autointro, packed]    % prevent orphan list intro
+\setupitemize[indentnext=no]
+
+\setupfloat[figure][default={here,nonumber}]
+\setupfloat[table][default={here,nonumber}]
+
+\setuptables[textwidth=max, HL=none]
+\setupxtable[frame=off,option={stretch,width}]
+
+\setupthinrules[width=15em] % width of horizontal rules
+
+\setupdelimitedtext
+  [blockquote]
+  [before={\setupalign[middle]},
+   indentnext=no,
+  ]
+
+
+\starttext
+
+\section[title={葉家郡},reference={葉家郡}]
+
+\startplacetable[location=none]
+\startxtable
+\startxtablebody[body]
+\startxrow
+\startxcell[align=right] xnumtw@gmail.com \stopxcell
+\startxcell[align=left]
+\useURL[url1][https://github.com/xnum][][xnum@GitHub]\from[url1] \stopxcell
+\stopxrow
+\startxrow
+\startxcell[align=right] 0989-742-547 \stopxcell
+\startxcell[align=left]
+\useURL[url2][https://www.linkedin.com/in/xnumtw/][][xnumtw@LinkedIn]\from[url2] \stopxcell
+\stopxrow
+\stopxtablebody
+\startxtablefoot[foot]
+\startxrow
+\startxcell[align=right] Taipei, Taiwan \stopxcell
+\startxcell[align=left]  \stopxcell
+\stopxrow
+\stopxtablefoot
+\stopxtable
+\stopplacetable
+
+\thinrule
+
+\startblockquote
+Experienced, skilled programmer, hands-on experience in UNIX programming
+and command-line interface environment. Strong problem solving skills.
+Focus on high availability and fault tolerant distributed system
+technologies now.
+\stopblockquote
+
+\thinrule
+
+\subsection[title={Working Experience},reference={working-experience}]
+
+\startdescription{June 2017-Present}
+  {\bf Taipei Exchange}
+
+  {\em Software Engineer}
+
+  core systems development and maintenance. excellent problem solver.
+
+  \startitemize[packed]
+  \item
+    Provided software security advice and design on new system
+    architecture.
+  \item
+    Introduced RPM Package Manager into system installation procedure,
+    reduced 40\letterpercent{} time for building new machine.
+  \item
+    Analyzed receiving multicast packet loss problem, peak loss rate
+    reduced from 50\letterpercent{} to 0.2\letterpercent{}.
+  \item
+    Developed new message dispatch gateway and conducted secure file
+    transfer method to replace plain design for Web client.
+  \item
+    Researched distributed system and consensus algorithm, proposed next
+    generation online transaction processing system design based on
+    application-level approach.
+  \item
+    Developed networking failure simulation framework for testing.
+  \item
+    Developed system testing framework with FIX protocol.
+  \item
+    Imported and shared doxygen to deal with auto document generation.
+  \item
+    Optimized old continuous data transfer system to 110 times faster
+    and solved several race condition bugs,developed a cross platform
+    new one by event-driven design with backward compatible.
+  \stopitemize
+\stopdescription
+
+\startdescription{Sep 2015-Apr 2017}
+  {\bf NCTU Information Technology Service Center}
+
+  {\em Part-Time Software Engineer}
+
+  full-stack web development.
+
+  \startitemize[packed]
+  \item
+    Migrated 4 mail services and thousands of accounts to Google G Suite
+    service and developed NCTU G Suite mail system using the
+    microservice architecture.
+  \item
+    Developed firewall plugin system integrates WAF with switches.
+  \stopitemize
+\stopdescription
+
+\subsection[title={Education},reference={education}]
+
+\startdescription{2015-2017}
+  {\bf MSc, Institute of Computer Science and Engineering} National
+  Chiao Tung University
+
+  Thesis title: MCTS-based Path Exploration for Symbolic Execution
+
+  \startitemize[packed]
+  \item
+    Software Testing
+  \item
+    Operating System
+  \item
+    Parallel Programming
+  \item
+    Advanced UNIX Programming
+  \item
+    Network Security
+  \item
+    Network Programming
+  \stopitemize
+\stopdescription
+
+\startdescription{2011-2015}
+  {\bf BSc, Computer Science} National Taichung University of Education
+\stopdescription
+
+\subsection[title={Skills},reference={skills}]
+
+\startdescription{Computer Science}
+  \startitemize[packed]
+  \item
+    Symbolic Execution
+  \item
+    Distributed System
+  \item
+    Performance Tuning
+  \item
+    Software Security
+  \stopitemize
+\stopdescription
+
+\startdescription{Computer Programming}
+  \startitemize[packed]
+  \item
+    Linux Programming
+  \item
+    Network Programming
+  \item
+    System Software
+  \stopitemize
+\stopdescription
+
+\startdescription{Tools}
+  \startitemize[packed]
+  \item
+    gdb, git, unix cli, vim, gnu make
+  \stopitemize
+\stopdescription
+
+\startdescription{Programming Languages}
+  \startitemize[packed]
+  \item
+    {\bf Proficient:} C/C++, Bash Shell Script
+  \item
+    {\bf Intermediate:} PHP (Laravel), C\#
+  \stopitemize
+\stopdescription
+
+\thinrule
+
+\stoptext
