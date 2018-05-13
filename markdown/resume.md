@@ -20,7 +20,7 @@ Taipei, Taiwan
 Working Experience
 ----------
 
-Jun 2017-Present
+Jun 2017-Jun 2018
 :   **Taipei Exchange**
 
     _Software Engineer_
@@ -28,14 +28,11 @@ Jun 2017-Present
 
       core systems development and maintenance. excellent problem solver.
 
-    - Provided software security advice and design on new system architecture.
     - Introduced RPM Package Manager into system installation procedure, reduced 40% time for building new machine.
     - Analyzed receiving multicast packet loss problem, peak loss rate reduced from 50% to 0.2%.
     - Developed new message dispatch gateway and conducted secure file transfer method to replace plain design for Web client.
     - Researched distributed system and consensus algorithm, proposed next generation online transaction processing system design based on application-level approach.
-    - Developed networking failure simulation framework for testing.
     - Developed system testing framework with FIX protocol.
-    - Imported and shared doxygen to deal with auto document generation.
     - Optimized old continuous data transfer system to 110 times faster and solved several race condition bugs,developed a cross platform new one by event-driven design with backward compatible.
 
 Sep 2015-Apr 2017
