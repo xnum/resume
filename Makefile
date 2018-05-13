@@ -3,44 +3,30 @@ IN_DIR=markdown
 STYLES_DIR=styles
 STYLE=chmduquesne
 
+ORG=resume.md
+FILE_NAME=resume
+
 all: html
 
-pdf: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-		echo $$FILE_NAME.pdf; \
-		pandoc --standalone --template $(STYLES_DIR)/$(STYLE).tex \
-			--from markdown --to context \
-			--variable papersize=A4 \
-			--output $(OUT_DIR)/$$FILE_NAME.tex $$f > /dev/null; \
-		context $(OUT_DIR)/$$FILE_NAME.tex \
-			--result=$(OUT_DIR)/$$FILE_NAME.pdf > $(OUT_DIR)/context_$$FILE_NAME.log 2>&1; \
-	done
+pdf: init html
+	pandoc --standalone --template=styles/chmduquesne.tex \
+		   --pdf-engine=xelatex \
+           --from markdown \
+           --variable papersize=A4 \
+           --output resume.pdf resume.md > /dev/null
 
 html: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-		echo $$FILE_NAME.html; \
-		pandoc --standalone --include-in-header $(STYLES_DIR)/$(STYLE).css \
-			--lua-filter=pdc-links-target-blank.lua \
-			--from markdown --to html \
-            --template template.html \
-			--output index.html $$f metadata.yaml; \
-	done
+	pandoc --standalone --include-in-header $(STYLES_DIR)/$(STYLE).css \
+           --lua-filter=pdc-links-target-blank.lua \
+           --from markdown --to html \
+           --template template.html \
+           --output index.html $(ORG) metadata.yaml
 
 docx: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-		echo $$FILE_NAME.docx; \
-		pandoc --standalone $$SMART $$f --output $(OUT_DIR)/$$FILE_NAME.docx; \
-	done
+	pandoc --standalone $$SMART $(ORG) --output $(OUT_DIR)/$$FILE_NAME.docx
 
 rtf: init
-	for f in $(IN_DIR)/*.md; do \
-		FILE_NAME=`basename $$f | sed 's/.md//g'`; \
-		echo $$FILE_NAME.rtf; \
-		pandoc --standalone $$SMART $$f --output $(OUT_DIR)/$$FILE_NAME.rtf; \
-	done
+	pandoc --standalone $$SMART $(ORG) --output $(OUT_DIR)/$$FILE_NAME.rtf
 
 init: dir version
 
