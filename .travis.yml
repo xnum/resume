@@ -2,7 +2,7 @@ language: node_js
 node_js:
     - "8"
 before_install:
-    - sudo apt install pandoc chromium-browser
+    - sudo apt install chromium-browser
 install:
     - npm install
 script:
@@ -10,3 +10,10 @@ script:
     - sudo dpkg -i pandoc-2.2.3.2-1-amd64.deb
     - pandoc --version
     - make html pdf
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+    keep-history: true
+    on:
+      branch: master
