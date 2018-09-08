@@ -3,7 +3,7 @@
 
 -------------------    ---------------------
 xnumtw@gmail.com                [xnum@GitHub](https://github.com/xnum)
-Taipei, Taiwan              [xnumtw@LinkedIn](https://www.linkedin.com/in/xnumtw/)
+Taiwan                      [xnumtw@LinkedIn](https://www.linkedin.com/in/xnumtw/)
 -------------------    ---------------------
 
 ----
@@ -31,7 +31,6 @@ Jun 2017-Jun 2018
 
     _Software Engineer_
 
-
       core systems development and maintenance.
 
     - Introduced RPM Package Manager into system installation procedure, reduced 40% time for building new machine.
@@ -44,7 +43,6 @@ Sep 2015-Apr 2017
 :   **NCTU Information Technology Service Center**
 
     _Part-Time Software Engineer_
-
 
     full-stack web development.
 
@@ -79,10 +77,8 @@ Skills
 --------------------
 
 Computer Science
-:   - Symbolic Execution
-    - Distributed System
+:   - Distributed System
     - Performance Tuning
-    - Software Security
 
 Computer Programming
 :   - Linux Programming
@@ -90,19 +86,11 @@ Computer Programming
     - System Software
 
 Tools
-:   - gdb, git, unix cli, vim, gnu make
+:   - gdb, git, vim
 
 Programming Languages
 :   - **Proficient:** C/C++, Bash Shell Script
-    - **Intermediate:** PHP (Laravel), C#
-
-Awards
----------------------
-
-May 2015
-:   **Taiwan Student Cluster Competition**
-
-    Led a team to won 3rd prize. Constructed and tuned high performance computing cluster with GPUs and InfiniBand.
+    - **Intermediate:** PHP (Laravel), C#, Golang
 
 ----
 

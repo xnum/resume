@@ -1,7 +1,7 @@
 The Markdown Resume
 ===================
 
-It's from [mszep/pandoc_resume]https://github.com/mszep/pandoc_resume
+It's from [mszep/pandoc_resume](https://github.com/mszep/pandoc_resume)
 
 Support Tranditional Chinese.
 
@@ -10,3 +10,7 @@ Support Tranditional Chinese.
  * pandoc
  * wkhtmltopdf
 
+
+### Installation
+
+ see `.travis.yml`
