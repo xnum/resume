@@ -9,11 +9,7 @@ FILE_NAME=resume
 all: html
 
 pdf: init html
-	pandoc --standalone --template=styles/chmduquesne.tex \
-		   --pdf-engine=xelatex \
-           --from markdown \
-           --variable papersize=A4 \
-           --output resume.pdf resume.md > /dev/null
+	./node_modules/.bin/chrome-headless-render-pdf --url file:///home/num/resume/index.html --pdf resume.pdf
 
 html: init
 	pandoc --standalone --include-in-header $(STYLES_DIR)/$(STYLE).css \
@@ -22,10 +18,7 @@ html: init
            --template template.html \
            --output index.html $(ORG) metadata.yaml
 
-init: dir version
-
-dir:
-	mkdir -p $(OUT_DIR)
+init: version
 
 version:
 	PANDOC_VERSION=`pandoc --version | head -1 | cut -d' ' -f2 | cut -d'.' -f1`; \

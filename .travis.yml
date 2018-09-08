@@ -1,8 +1,9 @@
 language: node_js
 node_js:
-    - "4"
+    - "8"
+before_install:
+    - sudo apt install pandoc chromium-browser
 install:
-    - npm install -g resume-cli
     - npm install
 script:
-    - resume export index.html
+    - make html pdf

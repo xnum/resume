@@ -1,0 +1,22 @@
+{
+  "name": "xnum-resume",
+  "version": "1.0.0",
+  "description": "for personal use",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xnum/resume.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xnum/resume/issues"
+  },
+  "homepage": "https://github.com/xnum/resume#readme",
+  "dependencies": {
+    "chrome-headless-render-pdf": "^1.7.2"
+  }
+}
