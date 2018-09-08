@@ -8,9 +8,9 @@ Taipei, Taiwan              [xnumtw@LinkedIn](https://www.linkedin.com/in/xnumtw
 
 ----
 
->  Experienced, skilled programmer, hands-on experience in 
+>  Experienced, skilled programmer, hands-on experience in
 >  UNIX programming and command-line interface environment.
->  Strong problem solving skills. Focus on high availability 
+>  Strong problem solving skills. Focus on high availability
 >  and fault tolerant distributed system technologies now.
 
 ----

@@ -22,12 +22,6 @@ html: init
            --template template.html \
            --output index.html $(ORG) metadata.yaml
 
-docx: init
-	pandoc --standalone $$SMART $(ORG) --output $(OUT_DIR)/$$FILE_NAME.docx
-
-rtf: init
-	pandoc --standalone $$SMART $(ORG) --output $(OUT_DIR)/$$FILE_NAME.rtf
-
 init: dir version
 
 dir:
