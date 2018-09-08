@@ -10,8 +10,7 @@ init:
 	mkdir -p $(OUT_DIR)
 
 pdf: init html
-	./node_modules/.bin/chrome-headless-render-pdf \
-		--url file:///${PWD}/$(OUT_DIR)/index.html --pdf $(OUT_DIR)/resume.pdf
+	wkhtmltopdf $(OUT_DIR)/index.html --disable-javascript $(OUT_DIR)/resume.pdf
 
 html: init
 	pandoc --standalone --include-in-header $(STYLES_DIR)/$(STYLE).css \

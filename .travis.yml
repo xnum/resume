@@ -1,18 +1,14 @@
-language: node_js
-node_js:
-  - "8"
-cache:
-  directories:
-    - node_modules
+sudo: required
+dist: trusty
 before_install:
-  - sudo apt install language-pack-zh* chinese* chromium-browser fonts-noto
+  - sudo apt-get -qq update
+  - sudo apt-get install -y xfonts-75dpi chromium-browser fonts-noto language-pack-zh-hant fonts-wqy-microhei ttf-wqy-microhei fonts-wqy-zenhei ttf-wqy-zenhei
+  - wget https://downloads.wkhtmltopdf.org/0.12/0.12.5/wkhtmltox_0.12.5-1.trusty_amd64.deb
+  - sudo dpkg -i wkhtmltox_0.12.5-1.trusty_amd64.deb
+  - rm wkhtmltox_0.12.5-1.trusty_amd64.deb
 install:
-  - npm install
+  - fc-cache -f -v
 script:
-  - wget --quiet https://github.com/jgm/pandoc/releases/download/2.2.3.2/pandoc-2.2.3.2-1-amd64.deb
-  - sudo dpkg -i pandoc-2.2.3.2-1-amd64.deb
-  - rm pandoc-2.2.3.2-1-amd64.deb
-  - pandoc --version
   - make html pdf
 deploy:
   provider: pages
