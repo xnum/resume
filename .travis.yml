@@ -6,4 +6,7 @@ before_install:
 install:
     - npm install
 script:
+    - wget https://github.com/jgm/pandoc/releases/download/2.2.3.2/pandoc-2.2.3.2-1-amd64.deb
+    - sudo dpkg -i pandoc-2.2.3.2-1-amd64.deb
+    - pandoc --version
     - make html pdf

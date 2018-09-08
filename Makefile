@@ -1,15 +1,14 @@
 OUT_DIR=output
-IN_DIR=markdown
 STYLES_DIR=styles
 STYLE=chmduquesne
 
 ORG=resume.md
-FILE_NAME=resume
 
 all: html
 
 pdf: init html
-	./node_modules/.bin/chrome-headless-render-pdf --url file:///home/num/resume/index.html --pdf resume.pdf
+	./node_modules/.bin/chrome-headless-render-pdf \
+		--url file:///home/num/resume/index.html --pdf resume.pdf
 
 html: init
 	pandoc --standalone --include-in-header $(STYLES_DIR)/$(STYLE).css \
