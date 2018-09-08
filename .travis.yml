@@ -5,7 +5,7 @@ cache:
   directories:
     - node_modules
 before_install:
-  - sudo apt install chromium-browser fonts-noto
+  - sudo apt install language-pack-zh* chinese* chromium-browser fonts-noto
 install:
   - npm install
 script:
