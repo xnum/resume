@@ -8,46 +8,36 @@ Taiwan                      [xnumtw@LinkedIn](https://www.linkedin.com/in/xnumtw
 
 ----
 
->  Experienced, skilled programmer, hands-on experience in
->  UNIX programming and command-line interface environment.
->  Strong problem solving skills. Focus on high availability
->  and fault tolerant distributed system technologies now.
-
-----
+>  Hands-on experience in Kubernetes, docker, Google Cloud Platform.
+>  Familiar with Linux system. Strong problem solving skills.
+>  Focus on high-availability, high-concurrency distributed system.
 
 
 Working Experience
 ----------
 
 Jun 2018-Present
-:   **COBINHOOD, Ltd.**
+:   **COBINHOOD, Ltd.** _Software Engineer - Backend_
 
-    _Software Engineer_
+    Develop cryptocurrency exchange features.
 
-      cryptocurrency exchange features.
+    - Lead exchange team.
+    - Refined cache strategy that reduces updating latency to nanosecond.
+    - Designed and implemented the following components in exchange:
+       - licensing authentication mechanism.
+       - CMT Points to CMT coin estimating/distributing.
+    - Integrated blockchains (Monero, Tezos) into exchange.
+    - Improved unittest with database/cache isolation to run concurrently.
+    - Designed notification and event tracking mechanism.
 
 Jun 2017-Jun 2018
-:   **Taipei Exchange**
+:   **Taipei Exchange** _Software Engineer_
 
-    _Software Engineer_
+    Core systems development and maintenance.
 
-      core systems development and maintenance.
-
-    - Introduced RPM Package Manager into system installation procedure, reduced 40% time for building new machine.
-    - Analyzed receiving multicast packet loss problem, peak loss rate reduced from 50% to 0.2%.
     - Developed new message dispatch gateway and conducted secure file transfer method to replace plain design for Web client.
     - Researched distributed system and consensus algorithm, proposed next generation online transaction processing system design based on application-level approach.
-    - Optimized old continuous data transfer system to 110 times faster and solved several race condition bugs,developed a cross platform new one by event-driven design with backward compatible.
-
-Sep 2015-Apr 2017
-:   **NCTU Information Technology Service Center**
-
-    _Part-Time Software Engineer_
-
-    full-stack web development.
-
-    - Migrated 4 mail services and thousands of accounts to Google G Suite service and developed NCTU G Suite mail system using the microservice architecture.
-    - Developed firewall plugin system integrates WAF with switches.
+    - Optimized continuous data streaming system to 110 times faster and solved several race condition bugs,also developed a cross-platform new one by event-driven design with backward compatible.
 
 Education
 ---------
@@ -57,40 +47,14 @@ Education
 
     Thesis title: MCTS-based Path Exploration for Symbolic Execution
 
-    Teaching Assistant: Basic Programming
-
-    Relevant coursework:
-
-    - Software Testing
-    - Operating System
-    - Parallel Programming
-    - Advanced UNIX Programming
-    - Network Security
-    - Network Programming
-
 2011-2015
 :   **BSc, Computer Science** National Taichung University of Education
-
-    Teaching Assistant: Programming
 
 Skills
 --------------------
 
-Computer Science
-:   - Distributed System
-    - Performance Tuning
-
-Computer Programming
-:   - Linux Programming
-    - Network Programming
-    - System Software
-
-Tools
-:   - gdb, git, vim
-
 Programming Languages
-:   - **Proficient:** C/C++, Bash Shell Script
-    - **Intermediate:** PHP (Laravel), C#, Golang
+:   - **Proficient:** C/C++, Golang, Bash Shell Script
+    - **Intermediate:** PHP (Laravel), C#
 
-----
-
+:   - git, vim, GCP, docker, Kubernetes
