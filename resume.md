@@ -16,7 +16,7 @@ Taiwan                      [xnumtw@LinkedIn](https://www.linkedin.com/in/xnumtw
 Working Experience
 ----------
 
-Jun 2018-Present
+Jun 2018-May 2019
 :   **COBINHOOD, Ltd.** _Software Engineer - Backend_
 
     Develop cryptocurrency exchange features.
@@ -27,7 +27,7 @@ Jun 2018-Present
        - licensing authentication mechanism.
        - CMT Points to CMT coin estimating/distributing.
     - Integrated blockchains (Monero, Tezos) into exchange.
-    - Improved unittest with database/cache isolation to run concurrently.
+    - Improved unit test with database/cache isolation to run concurrently.
     - Designed notification and event tracking mechanism.
 
 Jun 2017-Jun 2018
