@@ -1,43 +1,47 @@
-葉家郡
+Jia-Jun Yeh
 ============
 
 -------------------    ---------------------
 xnumtw@gmail.com                [xnum@GitHub](https://github.com/xnum)
-Taiwan                      [xnumtw@LinkedIn](https://www.linkedin.com/in/xnumtw/)
+Taipei, Taiwan
 -------------------    ---------------------
 
 ----
 
->  Hands-on experience in Kubernetes, docker, Google Cloud Platform.
->  Familiar with Linux system. Strong problem solving skills.
->  Focus on high-availability, high-concurrency distributed system.
+>  Jia-Jun is a professional backend developer specializing in C++ and Go.
+>  He worked for Taipei Exchange at first that learned about classical financial system.
+>  Afterward he joined blockchain startup as a senior developer, and becomes team lead who is responsible for cryptocurrency exchange.
+>  Now to construct competitive product, he is bringing bleeding-edge technology to FinTech startup.
 
 
-Working Experience
-----------
+Work Experience
+---------------
 
-Jun 2018-May 2019
-:   **COBINHOOD, Ltd.** _Software Engineer - Backend_
+July 2019-Present
+:   **Sky Mirror Technology Co., Ltd.** _VP of Engineering_
 
-    Develop cryptocurrency exchange features.
+    In charge of futures trading system DevOps.
 
-    - Lead exchange team.
-    - Refined cache strategy that reduces updating latency to nanosecond.
-    - Designed and implemented the following components in exchange:
-       - licensing authentication mechanism.
-       - CMT Points to CMT coin estimating/distributing.
-    - Integrated blockchains (Monero, Tezos) into exchange.
-    - Improved unit test with database/cache isolation to run concurrently.
-    - Designed notification and event tracking mechanism.
+June 2018-May 2019
+:   **COBINHOOD, Ltd.** _Lead Backend developer_
 
-Jun 2017-Jun 2018
+    Cryptocurrency exchange development.
+
+    - Led 5 people exchange team.
+    - Optimized Kubernetes deployment configuration to reduce monthly cost over 10000 USD on Google Cloud Platform.
+    - Designed new coin holder rewards point system to reduce 99% computing resource.
+    - Developed staking rewards distributing service for hundreds of users.
+    - Implemented Go version client library to integrate 2 blockchains (Monero, Tezos) into exchange.
+    - Improved testing with database/cache tuning to speed up 300%.
+
+June 2017-June 2018
 :   **Taipei Exchange** _Software Engineer_
 
-    Core systems development and maintenance.
+    Emerging stock trading system development.
 
-    - Developed new message dispatch gateway and conducted secure file transfer method to replace plain design for Web client.
-    - Researched distributed system and consensus algorithm, proposed next generation online transaction processing system design based on application-level approach.
-    - Optimized continuous data streaming system to 110 times faster and solved several race condition bugs,also developed a cross-platform new one by event-driven design with backward compatible.
+    - Proposed state-of-the-art stock trading system design based on raft consensus to remove commercial middleware dependency.
+    - Developed message dispatch proxy to adapt trading system to web service.
+    - Optimized continuous data streaming system to 110 times faster and solved critical race condition problems, also developed a cross-platform new one by event-driven design.
 
 Education
 ---------
@@ -45,16 +49,11 @@ Education
 2015-2017
 :   **MSc, Institute of Computer Science and Engineering** National Chiao Tung University
 
-    Thesis title: MCTS-based Path Exploration for Symbolic Execution
-
 2011-2015
 :   **BSc, Computer Science** National Taichung University of Education
 
 Skills
---------------------
+------
 
-Programming Languages
-:   - **Proficient:** C/C++, Golang, Bash Shell Script
-    - **Intermediate:** PHP (Laravel), C#
-
-:   - git, vim, GCP, docker, Kubernetes
+- C++, Go, git, docker, Kubernetes
+- PostgreSQL, MySQL, redis, NATS streaming, gRPC
