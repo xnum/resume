@@ -26,17 +26,17 @@ gtag('config', 'UA-69634995-4');
    * This CSS document is delivered to you under the CC BY-SA 3.0 License.
    * https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
    */
-  
+
   /* Whole document */
   body {
       font-family: "Noto Sans CJK TC", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 15px;
+      font-size: 14px;
       max-width: 800px;
       margin: auto;
       background: #FFFFFF;
       padding: 10px 10px 10px 10px;
   }
-  
+
   /* Title of the resume */
   h1 {
       font-size: 36px;
@@ -44,7 +44,7 @@ gtag('config', 'UA-69634995-4');
       text-align:center;
       margin-bottom:10px;
   }
-  
+
   /* Titles of categories */
   h2 {
       /* This is called "sectioncolor" in the ConTeXt stylesheet. */
@@ -60,7 +60,7 @@ gtag('config', 'UA-69634995-4');
       /* This is called "rulecolor" in the ConTeXt stylesheet. */
       background-color: #9CB770;
   }
-  
+
   /* Definitions */
   dt {
       float: left;
@@ -75,23 +75,23 @@ gtag('config', 'UA-69634995-4');
       margin-top:0;
       margin-bottom:7px;
   }
-  
+
   /* Blockquotes */
   blockquote {
       text-align: center
   }
-  
+
   /* Links */
   a {
       text-decoration: none;
       color: #397249;
   }
-  
+
   /* Horizontal separators */
   hr {
       color: #A6A6A6;
   }
-  
+
   table {
       width: 100%;
   }
@@ -108,40 +108,55 @@ gtag('config', 'UA-69634995-4');
 <td style="text-align: right;"><a href="https://github.com/xnum" target="_blank">xnum@GitHub</a></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Taipei, Taiwan</td>
+<td style="text-align: left;">Taichung, Taiwan</td>
 <td style="text-align: right;"></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <blockquote>
-<p>Jia-Jun is a professional backend developer specializing in C++ and Go. He worked for Taipei Exchange at first that learned about classical financial system. Afterward he joined blockchain startup as a senior developer, and becomes team lead who is responsible for cryptocurrency exchange. Now to construct competitive product, he is bringing bleeding-edge technology to FinTech startup.</p>
+<p>Jia-Jun is a professional software engineer specializing in C++ and Go. He first worked for Taipei Exchange, where he had experience in classical financial system. After that, he joined a blockchain startup as a senior developer and became team leader in charge of cryptocurrency exchange. Now in order to build competitive product, he is bringing cutting-edge technology to FinTech startup.</p>
 </blockquote>
 <h2 id="work-experience">Work Experience</h2>
 <dl>
-<dt>July 2019-Present</dt>
+<dt>Jan 2021-Present</dt>
+<dd><p><strong>Stranity Technology Co,. Ltd.</strong> <em>Chief Technology Officer</em></p>
+<p>spin-off</p>
+<ul>
+<li>Designed a Golang monorepo for the backend team and introduced clean architecture.</li>
+<li>Developed an automatic Swagger API documentation generator tool for Gin Framework (Golang).</li>
+<li>Designed and developed a strategy subscription and trading platform targeting low latency and high concurrency. Based on a self-managed Kubernetes cluster.</li>
+<li>Deployed and Maintained self-managed high-availability Kubernetes cluster, OS, and network infrastructure.</li>
+<li>Developed trading system components using Modern C++ (boost, TBB)</li>
+<li>Researched and applied low-latency trading technology to products. (Solarflare and Mellanox kernel bypass library, kernel tuning, CPU microarchitecture, cache-friendly programming, lock-free and wait-free data structures)</li>
+</ul>
+</dd>
+<dt>July 2019-Jan 2021</dt>
 <dd><p><strong>Sky Mirror Technology Co., Ltd.</strong> <em>VP of Engineering</em></p>
-<p>In charge of futures trading system DevOps.</p>
+<p>Futures trading system development using C++17.</p>
+<ul>
+<li>Optimized the trading system to achieve microsecond trading speed by selecting the best data structure and redesigning the process execution flow.</li>
+<li>Redesigned core component from MVC to Layered Architecture to improve maintainability and testability.</li>
+<li>Implemented gRPC plugin that could call RPC in a single process to reduce network latency or avoid context switching.</li>
+<li>Investigated several production accidents. e.g., MySQL transaction deadlock issue, unexpected process crashing, L2/L3 network connectivity. Also wrote the corresponding postmortem.</li>
+</ul>
 </dd>
 <dt>June 2018-May 2019</dt>
 <dd><p><strong>COBINHOOD, Ltd.</strong> <em>Lead Backend developer</em></p>
 <p>Cryptocurrency exchange development.</p>
 <ul>
-<li>Led 5 people exchange team.</li>
-<li>Optimized Kubernetes deployment configuration to reduce monthly cost over 10000 USD on Google Cloud Platform.</li>
-<li>Designed new coin holder rewards point system to reduce 99% computing resource.</li>
-<li>Developed staking rewards distributing service for hundreds of users.</li>
-<li>Implemented Go version client library to integrate 2 blockchains (Monero, Tezos) into exchange.</li>
+<li>Streamlined Kubernetes deployment configuration to reduce monthly cost by over USD 10,000 on the Google Cloud Platform.</li>
+<li>Designed a new coin holder reward point system to reduce 99% of computing resources.</li>
+<li>Implemented the Go version client library to integrate two blockchains (Monero, Tezos) in exchange.</li>
 <li>Improved testing with database/cache tuning to speed up 300%.</li>
 </ul>
 </dd>
 <dt>June 2017-June 2018</dt>
 <dd><p><strong>Taipei Exchange</strong> <em>Software Engineer</em></p>
-<p>Emerging stock trading system development.</p>
+<p>Development of an emerging stock trading system.</p>
 <ul>
-<li>Proposed state-of-the-art stock trading system design based on raft consensus to remove commercial middleware dependency.</li>
-<li>Developed message dispatch proxy to adapt trading system to web service.</li>
-<li>Optimized continuous data streaming system to 110 times faster and solved critical race condition problems, also developed a cross-platform new one by event-driven design.</li>
+<li>Developed message dispatch proxy to adapt the trading system to web service.</li>
+<li>Optimized continuous data streaming system to be 110 times faster and solved critical race condition problems. And developed a drop-in replacement for it based on libuv.</li>
 </ul>
 </dd>
 </dl>
@@ -154,10 +169,5 @@ gtag('config', 'UA-69634995-4');
 <dd><strong>BSc, Computer Science</strong> National Taichung University of Education
 </dd>
 </dl>
-<h2 id="skills">Skills</h2>
-<ul>
-<li>C++, Go, git, docker, Kubernetes</li>
-<li>PostgreSQL, MySQL, redis, NATS streaming, gRPC</li>
-</ul>
 </body>
 </html>

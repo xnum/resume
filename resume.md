@@ -37,6 +37,7 @@ July 2019-Jan 2021
     - Optimized the trading system to achieve microsecond trading speed by selecting the best data structure and redesigning the process execution flow.
     - Redesigned core component from MVC to Layered Architecture to improve maintainability and testability.
     - Implemented gRPC plugin that could call RPC in a single process to reduce network latency or avoid context switching.
+    - Investigated several production accidents. e.g., MySQL transaction deadlock issue, unexpected process crashing, L2/L3 network connectivity. Also wrote the corresponding postmortem.
 
 
 June 2018-May 2019
@@ -46,7 +47,6 @@ June 2018-May 2019
 
     - Streamlined Kubernetes deployment configuration to reduce monthly cost by over USD 10,000 on the Google Cloud Platform.
     - Designed a new coin holder reward point system to reduce 99% of computing resources.
-    - Developed staking reward distribution service for hundreds of users.
     - Implemented the Go version client library to integrate two blockchains (Monero, Tezos) in exchange.
     - Improved testing with database/cache tuning to speed up 300%.
 
@@ -56,7 +56,6 @@ June 2017-June 2018
 
     Development of an emerging stock trading system.
 
-    - Proposed state-of-the-art stock trading system design based on RAFT consensus to remove commercial middleware dependency.
     - Developed message dispatch proxy to adapt the trading system to web service.
     - Optimized continuous data streaming system to be 110 times faster and solved critical race condition problems. And developed a drop-in replacement for it based on libuv.
 
