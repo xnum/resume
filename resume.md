@@ -3,15 +3,14 @@ Jia-Jun Yeh
 
 -------------------                 ---------------------
 xnumtw@gmail.com                                 [xnum@GitHub](https://github.com/xnum)
-Taichung, Taiwan
 -------------------                 ---------------------
 
 ----
 
 >  Jia-Jun is a professional software engineer specializing in C++ and Go.
->  He first worked for Taipei Exchange, where he had experience in classical financial system.
->  After that, he joined a blockchain startup as a senior developer and became team leader in charge of cryptocurrency exchange.
->  Now in order to build competitive product, he is bringing cutting-edge technology to FinTech startup.
+>  He first worked for Taipei Exchange, where he had experience in the classical financial system.
+>  After that, he joined a blockchain startup as a senior developer and became the team leader in charge of cryptocurrency exchange.
+>  Now to build competitive products, he is bringing cutting-edge technology to FinTech startups.
 
 Work Experience
 ---------------
@@ -27,6 +26,7 @@ Jan 2021-Present
     - Deployed and Maintained self-managed high-availability Kubernetes cluster, OS, and network infrastructure.
     - Developed trading system components using Modern C++ (boost, TBB)
     - Researched and applied low-latency trading technology to products. (Solarflare and Mellanox kernel bypass library, kernel tuning, CPU microarchitecture, cache-friendly programming, lock-free and wait-free data structures)
+    - Expanded development team to seven members, led two C++ system engineers in developing a risk management middleware system, led two backend engineers and three frontend engineers in developing a CRM website system, and trained one SRE to master Kubernetes management to handle company system maintenance.
 
 
 July 2019-Jan 2021
@@ -38,6 +38,7 @@ July 2019-Jan 2021
     - Redesigned core component from MVC to Layered Architecture to improve maintainability and testability.
     - Implemented gRPC plugin that could call RPC in a single process to reduce network latency or avoid context switching.
     - Investigated several production accidents. e.g., MySQL transaction deadlock issue, unexpected process crashing, L2/L3 network connectivity. Also wrote the corresponding postmortem.
+    - As a team manager, recruited two backend engineers and one frontend engineer, and collaborated on developing system management and customer dashboard projects.
 
 
 June 2018-May 2019
@@ -49,6 +50,8 @@ June 2018-May 2019
     - Designed a new coin holder reward point system to reduce 99% of computing resources.
     - Implemented the Go version client library to integrate two blockchains (Monero, Tezos) in exchange.
     - Improved testing with database/cache tuning to speed up 300%.
+    - Led a team of five engineers in developing and maintaining a backend system for a cryptocurrency exchange.
+    - Participated as an interviewer in six job interviews for management roles.
 
 
 June 2017-June 2018
