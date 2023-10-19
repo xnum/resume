@@ -1,4 +1,4 @@
-OUT_DIR=build
+OUT_DIR=docs
 STYLES_DIR=styles
 STYLE=chmduquesne
 

@@ -2,13 +2,13 @@ Jia-Jun Yeh
 ============
 
 -------------------                 ---------------------
-xnumtw@gmail.com                                 [xnum@GitHub](https://github.com/xnum)
+xnumtw@gmail.com                                 [https://xnum.in](https://xnum.in)
 -------------------                 ---------------------
 
 ----
 
 >  Jia-Jun is a highly skilled software engineer specializing in C++ and Go programming.
->  He worked at Taipei Exchange, then became a senior developer at a blockchain startup and eventually led a cryptocurrency exchange team.
+>  He worked at Taipei Exchange, then became a senior backend developer at a blockchain startup and eventually led a cryptocurrency exchange team.
 >  Currently, Jia-Jun is the Chief Technology Officer at Stranity Technology Co., Ltd. and has led the development of a scalable backend infrastructure using cutting-edge technologies such as Golang, Kubernetes, and clean architecture.
 
 Work Experience
@@ -20,10 +20,11 @@ Jan 2021-Present
     The company is a spin-off of Sky Mirror Technology Co., Ltd.
 
     - Utilized technologies such as monorepo and clean architecture to support backend development at a scale exceeding 100,000 lines of code.
-    - Developed an automatic Swagger API documentation generator tool for the Gin Framework (Golang) to reduce the cost of communication and documentation maintenance between the frontend and backend teams.
-    - Designed and developed a strategy subscription and trading platform targeting low latency and high concurrency. Based on a self-managed Kubernetes cluster.
+    - Developed an automatic Swagger API documentation generator tool to reduce the cost of communication and documentation maintenance between the frontend and backend teams.
+    - Engineered a strategy subscription and trading platform targeting low latency and high concurrency. Based on a self-managed Kubernetes cluster.
     - Deployed and Maintained self-managed high-availability Kubernetes cluster, OS, and network infrastructure.
-    - Researched and applied low-latency trading technology to the order gateway system written in C++. (Solarflare and Mellanox kernel bypass library, kernel tuning, CPU microarchitecture)
+    - Engineered the low-latency order gateway system using modern C++ and low-level architecture optimization.
+    - Delivered a cloud-based trading engine to eliminate the need for self-hosting.
     - Expanded development team to seven members, led two C++ system engineers in developing an order gateway system, led two backend engineers and two frontend engineers in developing a back office system, and trained one SRE to master Kubernetes management to handle company system maintenance.
 
 
@@ -33,9 +34,8 @@ July 2019-Jan 2021
     Futures trading system development.
 
     - Optimized the trading system to achieve microsecond trading speed by selecting the best data structure and redesigning the process execution flow.
-    - Redesigned core component from MVC to Layered Architecture to improve maintainability and testability.
     - Implemented gRPC plugin that could call RPC in a single process to reduce network latency or avoid context switching.
-    - Investigated several production accidents. e.g., MySQL transaction deadlock issue, unexpected process crashing, L2/L3 network connectivity. Also wrote the corresponding postmortem.
+    - Investigated several production accidents. e.g., MySQL transaction deadlock issue, unexpected process crashing, L2/L3 network connectivity.
     - As a team manager, recruited two backend engineers and one frontend engineer, and collaborated on developing system management and customer dashboard projects.
 
 
