@@ -3,6 +3,7 @@ STYLES_DIR=styles
 STYLE=chmduquesne
 
 ORG=resume.md
+BASE=$(basename $(ORG))
 
 all: html
 
@@ -10,7 +11,8 @@ init:
 	mkdir -p $(OUT_DIR)
 
 pdf: init html
-	wkhtmltopdf $(OUT_DIR)/index.html --disable-javascript $(OUT_DIR)/resume.pdf
+	wkhtmltopdf $(OUT_DIR)/index.html --disable-javascript $(OUT_DIR)/$(BASE)_full.pdf
+	pdftk $(OUT_DIR)/$(BASE)_full.pdf cat 1 output $(OUT_DIR)/$(BASE).pdf
 
 html: init
 	pandoc --standalone --include-in-header $(STYLES_DIR)/$(STYLE).css \

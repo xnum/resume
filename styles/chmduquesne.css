@@ -42,6 +42,11 @@ h2:before {
     background-color: #9CB770;
 }
 
+h3 {
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+}
+
 /* Definitions */
 dt {
     float: left;
