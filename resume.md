@@ -7,7 +7,7 @@ xnumtw@gmail.com                                 [https://xnum.in](https://xnum.
 
 ----
 
-> Jia-Jun is a distinguished software engineer and Chief Technology Officer at Stranity Technology Co., Ltd., known for his C++ and Go programming expertise.
+> Jia-Jun is a distinguished software engineer and formerly Chief Technology Officer at Stranity Technology Co., Ltd., known for his C++ and Go programming expertise.
 > With significant experience, from Taipei Exchange to leading a cryptocurrency exchange team, he excels in spearheading technical innovation and team leadership.
 
 Work Experience
