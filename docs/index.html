@@ -122,32 +122,32 @@ gtag('config', 'UA-69634995-4');
 <dl>
 <dt>Jan 2021-Dec 2023</dt>
 <dd><p><strong>Stranity Technology Co., Ltd.</strong> <em>Chief Technology Officer</em></p>
-<p>Spearheaded Stranity Technology Co., Ltd., a spin-off from Sky Mirror Technology, focusing on innovative trading technology development and strategic company growth initiatives.</p>
+<p>Spearheaded Stranity Technology Co., Ltd., a spin-off from Sky Mirror Technology.</p>
 <h3 id="leadership-experience">Leadership Experience</h3>
 <ul>
 <li>Successfully led the team in upgrading important internal systems to Kubernetes, which greatly enhanced the system’s robustness and availability.</li>
-<li>Contributed to the design of distributed systems in trading, bolstering team growth and enhancing technical expertise.</li>
 <li>Expanded a cross-functional team to 7 members, focusing on trading platform ecosystem development.
 <ul>
 <li>Provided technical decisions and architectural design for a team of 2 Backend Engineers and 2 Frontend Engineers in developing a back office system.</li>
-<li>Mentored a Backend Engineer from entry-level to senior, imparting advanced coding techniques, system design, and best practices.</li>
-<li>Mentored a new grad into a Site Reliability Engineer responsible for managing our company’s production environment, with a focus on Kubernetes administration skills training.</li>
+<li>Mentored a Golang Backend Engineer from entry-level to senior, imparting advanced coding techniques, system design, and best practices.</li>
 </ul></li>
 </ul>
 <h3 id="engineering-achievements">Engineering Achievements</h3>
 <ul>
-<li>Deployed and Maintained self-managed high-availability Kubernetes cluster, OS, and network infrastructure.</li>
+<li>Deployed and maintained self-managed high-availability Kubernetes cluster, OS, and network infrastructure.</li>
+<li>Designed and developed a trading system using Go (Golang), utilizing microservices architecture and distributed systems to handle up to 3,000 concurrent users.</li>
+<li>Enhanced Golang backend codebase, growing to 108k LOC, evolving to support 49 executables tailored for escalating code complexity.</li>
 <li>Engineered the low-latency order gateway core using modern C++ and low-level architecture optimization.</li>
-<li>Solved complex technical problems in various systems, showing strong analytical ability and swift problem-solving skills in high-pressure scenarios.</li>
 </ul>
 </dd>
 <dt>July 2019-Jan 2021</dt>
 <dd><p><strong>Sky Mirror Technology Co., Ltd.</strong> <em>VP of Engineering</em></p>
 <p>Led the development of a futures trading system, focusing on system optimization for trading efficiency.</p>
 <ul>
-<li>Demonstrated exceptional leadership and technical skills, achieving a rapid promotion from Senior Engineer to Supervisor within just 6 months.</li>
 <li>Expanded the team by recruiting 2 Backend Engineers and 1 Frontend Engineer, enhancing team diversity and technical capabilities as Team Manager.</li>
-<li>Led and collaborated with the team in developing system management and customer dashboard projects, fostering a collaborative environment and ensuring project success.</li>
+<li>Optimized system architecture, achieving microsecond-level trading speed by selecting optimal data structures and redesigning process execution flow.</li>
+<li>Rearchitected a C++ core components from MVC to Layered Architecture, improving maintainability and testability.</li>
+<li>Implemented a gRPC plugin for C++ applications, allowing direct function invocation within a single process to reduce network latency.</li>
 </ul>
 </dd>
 <dt>June 2018-May 2019</dt>
@@ -155,8 +155,8 @@ gtag('config', 'UA-69634995-4');
 <p>Led a team of 5 Engineers in cryptocurrency exchange development.</p>
 <ul>
 <li>Optimized Kubernetes deployments, cutting Google Cloud Platform costs by over USD 10,000 monthly.</li>
-<li>Implemented the Go version client library to integrate 2 blockchains (Monero, Tezos) in exchange.</li>
-<li>Managed operations for a cryptocurrency exchange, maintaining exclusive production environment access with privileges to hot wallet private keys, a responsibility shared only with the CTO and Backend VP.</li>
+<li>Implemented a Go-based client library, integrating Monero (C++) and Tezos blockchains, while tracing Monero’s C++ codebase to ensure accurate and seamless integration.</li>
+<li>Managed critical exchange operations, holding exclusive access to hot wallet private keys, a responsibility shared only with the CTO and VP of Backend.</li>
 </ul>
 </dd>
 <dt>June 2017-June 2018</dt>
@@ -175,6 +175,73 @@ gtag('config', 'UA-69634995-4');
 </dd>
 <dt>2011-2015</dt>
 <dd><strong>BSc, Computer Science</strong> National Taichung University of Education
+</dd>
+</dl>
+<h2 id="presentation">Presentation</h2>
+<dl>
+<dt>2023-09-14</dt>
+<dd><p>Configuration management in monorepo <em># Golang Taiwan Gathering</em></p>
+<ul>
+<li>Managing configurations in large monorepos with open-source tools.</li>
+<li>Focus on reducing dependency complexity.</li>
+<li>Strategies for scalable and maintainable config structures.</li>
+</ul>
+</dd>
+<dt>2023-09-21</dt>
+<dd><p>My journey of on-premises Kubernetes - Everything before production <em># CNTUG 2023-09</em></p>
+<ul>
+<li>Solutions for building Kubernetes environments with open-source tools.</li>
+<li>Discusses architecture and high availability before production.</li>
+<li>Emphasizes hardware planning and stress testing.</li>
+</ul>
+</dd>
+<dt>2024-01-18</dt>
+<dd><p>My journey of on-premises Kubernetes - Development of trading system with Golang <em># Golang Taiwan Gathering</em></p>
+<ul>
+<li>Migration from Docker/C++ to Go in a distributed system.</li>
+<li>Open-source tools for concurrency and Snowflake ID generation.</li>
+<li>Highlights Go’s scalability for high-availability workloads.</li>
+</ul>
+</dd>
+<dt>2024-05-25</dt>
+<dd><p>A Gin user’s Rethinking: Those Bad Smells <em># GopherDay Taiwan 2024</em></p>
+<ul>
+<li>Decoupling business logic from Gin using open-source methods.</li>
+<li>Improves unit testing and error handling.</li>
+<li>Focus on modular, maintainable architecture design.</li>
+</ul>
+</dd>
+<dt>2024-08-03</dt>
+<dd><p>Optimizing High-Frequency Trading Systems with Userspace RCU <em># COSCUP 2024</em></p>
+<ul>
+<li>Open-source RCU for improving trading system performance.</li>
+<li>Reduces synchronization overhead and improves latency.</li>
+<li>Highlights techniques like kernel bypass and busy polling.</li>
+</ul>
+</dd>
+<dt>2024-08-04</dt>
+<dd><p>Beyond CRUD: Leveraging Advanced SQL for Backend Optimization RCU <em># COSCUP 2024</em></p>
+<ul>
+<li>Uses open-source SQL features like CTEs and Materialized Views.</li>
+<li>Improves API response times and data handling efficiency.</li>
+<li>Optimizes backend for large-scale profit and loss analysis.</li>
+</ul>
+</dd>
+<dt>2024-08-04</dt>
+<dd><p>Entering SIMD Programming with Real-World Examples: A Code-Driven Journey <em># COSCUP 2024</em></p>
+<ul>
+<li>Demonstrates real-world SIMD examples for performance gains.</li>
+<li>Covers string operations using AVX2/AVX512.</li>
+<li>Focuses on handling edge cases in SIMD programming.</li>
+</ul>
+</dd>
+<dt>2024-08-04</dt>
+<dd><p>Optimizing On-Premise Kubernetes Networking with BGP <em># COSCUP 2024</em></p>
+<ul>
+<li>Uses open-source tools like Calico and MetalLB for BGP routing.</li>
+<li>Enhances network load balancing and traffic management.</li>
+<li>Discusses challenges in large-scale Kubernetes deployments.</li>
+</ul>
 </dd>
 </dl>
 </body>
