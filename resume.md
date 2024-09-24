@@ -38,7 +38,7 @@ July 2019-Jan 2021
 
     - Expanded the team by recruiting 2 Backend Engineers and 1 Frontend Engineer, enhancing team diversity and technical capabilities as Team Manager.
     - Optimized system architecture, achieving microsecond-level trading speed by selecting optimal data structures and redesigning process execution flow.
-    - Rearchitected a C++ core components from MVC to Layered Architecture, improving maintainability and testability.
+    - Rearchitected C++ core components from MVC to Layered Architecture, improving maintainability and testability.
     - Implemented a gRPC plugin for C++ applications, allowing direct function invocation within a single process to reduce network latency.
 
 
